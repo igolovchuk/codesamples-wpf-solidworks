@@ -1,0 +1,24 @@
+﻿<mui:ModernWindow x:Class="SolidworksWPFDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="Printed circuit board" IsTitleVisible="True"
+        ContentSource="/Pages/Home.xaml">
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Solidworks WPF Demo">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Test Project" Source="/Pages/Home.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="settings" GroupKey="settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="software" Source="/Pages/SettingsPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Help" Source="https://www.google.com.ua" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>
